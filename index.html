@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Study Planner – Gemini GenAI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>🤖 AI Study Planner</h1>
+  <p class="tag">Powered by Gemini GenAI</p>
+
+  <input type="text" id="subject" placeholder="Enter Subject Name">
+  <input type="number" id="hours" placeholder="Daily Study Hours">
+
+  <select id="level">
+    <option value="">Select Subject Level</option>
+    <option value="weak">Weak</option>
+    <option value="average">Average</option>
+    <option value="strong">Strong</option>
+  </select>
+
+  <button onclick="askGemini()">Ask Gemini AI</button>
+
+  <div class="output" id="output"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
